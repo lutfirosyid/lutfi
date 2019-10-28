@@ -6,7 +6,7 @@
             <div></div>
           </ion-col>
           <ion-col>
-            <div>JADWAL UJIAN MASUK POLITEKNIK PERKAPALAN NEGERI SURABAYA</div>
+            <div>pendaftran.ppns.ac.id</div>
           </ion-col>
           <ion-col>
             <div></div>
@@ -15,34 +15,33 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-
+  
   <ion-content>
       <ion-card class="welcome-card">
-        <img src="/assets/ppnsasiq.png" alt="" />
+        <img src="/assets/PPNS.jpg" alt="" />
         <ion-card-header>
-          <ion-card-subtitle>UPDATE JADWAL UJIAN</ion-card-subtitle>
+          <ion-card-subtitle>PPNS</ion-card-subtitle>
           <ion-card-title>Politeknik Perkapalan Negeri Surabaya</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <p>PPNS mempunyai beberapa jalur masuk untuk calon mahasiswa baru berikut kami tampilkan jadwal resmi dari kampus PPNS </p>
+          <p>PPNS adalah Perguruan Tinggi penyelenggara pendidikan vokasi bidang perkapalan dan teknologi penunjangnya dan merupakan yang pertama dan satu satunya di Indonesia</p>
         </ion-card-content>
       </ion-card>
       <ion-list lines="none">
         <ion-list-header>
-          <ion-label>Jalur resmi untuk calon mahasiswa baru PPNS</ion-label>
+          <ion-label>Jurusan yang terdapat di PPNS</ion-label>
         </ion-list-header>
-        <ion-item [routerLink]= "'/tabs/tab1/pmdk'">
+        <ion-item [routerLink]="'/tabs/tab1/detail'">
           <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>PMDK</ion-label>
+          <ion-label>TEKNIK KELISTRIKAN KAPAL</ion-label>
         </ion-item>
         <ion-item [routerLink]="'/tabs/tab1/detail2'">
           <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>UMPN</ion-label>
+          <ion-label>TEKNIK BANGUNAN KAPAL</ion-label>
         </ion-item>
         <ion-item [routerLink]="'/tabs/tab1/detail3'">
           <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>MANDIRI</ion-label>
+          <ion-label>TEKNIK PERMESINAN KAPAL</ion-label>
         </ion-item>
       </ion-list>
   </ion-content>
-  
