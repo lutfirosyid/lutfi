@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import { TkkPage } from './tkk.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
-    component: TabsPage,
+    path: 'tkk',
+    component: TkkPage,
     children: [
       {
         path: 'tab1',
@@ -23,7 +23,7 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1-detail/tab1-detail.module').then(m => m.Tab1DetailPageModule)
+              import('../to1-detail/to1-detail.module').then(m => m.To1DetailPageModule)
           }
         ]
       },
@@ -33,37 +33,7 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1-detail2/tab1-detail2.module').then(m => m.Tab1Detail2PageModule)
-          }
-        ]
-      },
-      {
-        path: 'tab1/pmdk',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pmdk/pmdk.module').then(m => m.pmdkPageModule)
-          }
-        ]
-      },
-      {
-        path: 'tab1/detail3',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../tab1-detail3/tab1-detail3.module').then(m => m.Tab1Detail3PageModule)
-          }
-        ]
-      },
-      {
-        path: 'tab1/detail4',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../tab1-detail4/tab1-detail4.module').then(m => m.Tab1Detail4PageModule)
+              import('../tkk1-detail/tkk1-detail.module').then(m => m.Tkk1DetailPageModule)
           }
         ]
       },
@@ -105,4 +75,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TkkPageRoutingModule {}

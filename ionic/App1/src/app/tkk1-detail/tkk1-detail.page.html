@@ -107,61 +107,35 @@
                       <ion-select-option value="2001">2001</ion-select-option>
                       <ion-select-option value="2002">2002</ion-select-option>
                       <ion-select-option value="2003">2003</ion-select-option>
+                     
+
                     </ion-select>
             </ion-item>
             </ion-list>
-
-            <ion-list> 
-              <ion-item>
-                <ion-label>jalur pendaftaran</ion-label>
-                <ion-select [(ngModel)]="hour" >
-                  <ion-select-option value="bidikmisi">bidikmisi</ion-select-option>
-                  <ion-select-option value="reguler">reguler</ion-select-option>
-                  <ion-select-option value="mandiri">mandiri</ion-select-option>
-                  </ion-select>
-          </ion-item>
-          </ion-list>
     
             <ion-list>
-              <ion-radio-group [(ngModel)]="class"> 
-                <ion-list-header>
-                  <ion-label>Jalur Pendaftaran</ion-label>
-                </ion-list-header>
-                <ion-item>
-                  <ion-label>D4 Teknik Disen Manufaktur</ion-label>
-                  <ion-radio  slot="start" value="D4 Teknik Disen Manufaktur" ></ion-radio>
-                </ion-item>
-                <ion-item>
-                  <ion-label>D4 Teknik Permesinan Kapal</ion-label>
-                  <ion-radio slot="start" value="D4 Teknik Permesinan Kapal"></ion-radio>
-                </ion-item>
-            
-                <ion-item>
-                  <ion-label>D4 Teknik Pengolahan Limbah</ion-label>
-                  <ion-radio slot="start" value="D4 Teknik Pengolahan Limbah"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>D4 Teknik Kesehatan dan Keselamatan Kerja</ion-label>
-                  <ion-radio slot="start" value="D4 Teknik Kesehatan dan Keselamatan Kerja"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>D4 Teknik Perpipaan</ion-label>
-                  <ion-radio slot="start" value="D4 Teknik Perpipaan"></ion-radio>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label>D3 Teknik Permesinan Kapal</ion-label>
-                  <ion-radio slot="start" value="D3 Teknik Permesinan Kapal"></ion-radio>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label>D3 Teknik Disen Manufaktur</ion-label>
-                  <ion-radio slot="start" value="D3 Teknik Disen Manufaktur"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-list>
+                <ion-radio-group [(ngModel)]="class"> 
+                  <ion-list-header>
+                    <ion-label>Jalur Pendaftaran</ion-label>
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-label>Bidik Misi</ion-label>
+                    <ion-radio  slot="start" value="bidikmisi" ></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Reguler</ion-label>
+                    <ion-radio slot="start" value="reguler"></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Mandiri</ion-label>
+                    <ion-radio slot="start" value="mandiri"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+              </ion-list>
+              <ion-label padding center text-center>I'm Not Bot</ion-label>
+              <ion-checkbox [(ngModel)]="notbot" color="primary"></ion-checkbox>
               <ion-row>
                   <ion-col>
                     <div></div>
