@@ -38,16 +38,6 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab1/pmdk',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pmdk/pmdk.module').then(m => m.pmdkPageModule)
-          }
-        ]
-      },
-      {
         path: 'tab1/detail3',
         children: [
           {

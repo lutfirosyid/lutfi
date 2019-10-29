@@ -6,7 +6,7 @@
             <div></div>
           </ion-col>
           <ion-col>
-            <div>JADWAL UJIAN MASUK POLITEKNIK PERKAPALAN NEGERI SURABAYA</div>
+            <div>Settings</div>
           </ion-col>
           <ion-col>
             <div></div>
@@ -16,33 +16,51 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-      <ion-card class="welcome-card">
-        <img src="/assets/ppnsasiq.png" alt="" />
-        <ion-card-header>
-          <ion-card-subtitle>UPDATE JADWAL UJIAN</ion-card-subtitle>
-          <ion-card-title>Politeknik Perkapalan Negeri Surabaya</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <p>PPNS mempunyai beberapa jalur masuk untuk calon mahasiswa baru berikut kami tampilkan jadwal resmi dari kampus PPNS </p>
-        </ion-card-content>
-      </ion-card>
-      <ion-list lines="none">
-        <ion-list-header>
-          <ion-label>Jalur resmi untuk calon mahasiswa baru PPNS</ion-label>
-        </ion-list-header>
-        <ion-item [routerLink]= "'/tabs/tab1/pmdk'">
-          <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>PMDK</ion-label>
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label>Blueberry</ion-label>
+          <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
         </ion-item>
-        <ion-item [routerLink]="'/tabs/tab1/detail2'">
-          <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>UMPN</ion-label>
+
+        <ion-item>
+          <ion-label>Apple</ion-label>
+          <ion-toggle slot="start" name="apple" color="secondary" checked></ion-toggle>
         </ion-item>
-        <ion-item [routerLink]="'/tabs/tab1/detail3'">
-          <ion-icon slot="start" color="high" name="star"></ion-icon>
-          <ion-label>MANDIRI</ion-label>
+
+        <ion-item>
+          <ion-label>Grape</ion-label>
+          <ion-toggle slot="start" name="grape" color="tertiary" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Kiwi</ion-label>
+          <ion-toggle slot="start" name="kiwi" color="success" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Orange</ion-label>
+          <ion-toggle slot="start" name="banana" color="warning" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Cherry</ion-label>
+          <ion-toggle slot="start" name="cherry" color="danger" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Banana</ion-label>
+          <ion-toggle slot="start" name="banana" color="light" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Cantaloupe</ion-label>
+          <ion-toggle slot="start" name="cantaloupe" color="medium" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Blackberry</ion-label>
+          <ion-toggle slot="start" name="blackberry" color="dark" checked></ion-toggle>
         </ion-item>
       </ion-list>
-  </ion-content>
-  
+</ion-content>
