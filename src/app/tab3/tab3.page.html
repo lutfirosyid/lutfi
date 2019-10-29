@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-row>
+          <ion-col>
+            <div></div>
+          </ion-col>
+          <ion-col>
+            <div>JADWAL UJIAN MASUK POLITEKNIK PERKAPALAN NEGERI SURABAYA</div>
+          </ion-col>
+          <ion-col>
+            <div></div>
+          </ion-col>
+        </ion-row>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-card class="welcome-card">
+        <img src="/assets/ppns_logo_politeknik_perkapalan.png" alt="" />
+        <ion-card-header>
+          <ion-card-subtitle>UPDATE JADWAL UJIAN</ion-card-subtitle>
+          <ion-card-title>Politeknik Perkapalan Negeri Surabaya</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>PPNS mempunyai beberapa jalur masuk untuk calon mahasiswa baru berikut kami tampilkan jadwal resmi dari kampus PPNS </p>
+        </ion-card-content>
+      </ion-card>
+      <ion-list lines="none">
+        <ion-list-header>
+          <ion-label>Jalur resmi untuk calon mahasiswa baru PPNS</ion-label>
+        </ion-list-header>
+        <ion-item [routerLink]="'/tabs/tab3/umpn'">
+          <ion-icon slot="start" color="high" name="star"></ion-icon>
+          <ion-label>PMDK</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/tabs/tab3/umpn'">
+          <ion-icon slot="start" color="high" name="star"></ion-icon>
+          <ion-label>UMPN</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/tabs/tab3/umpn'">
+          <ion-icon slot="start" color="high" name="star"></ion-icon>
+          <ion-label>MANDIRI</ion-label>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+  

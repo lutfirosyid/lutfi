@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-row>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div>pendaftran.ppns.ac.id</div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+      </ion-row>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/PPNS.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>PPNS</ion-card-subtitle>
+        <ion-card-title>Politeknik Perkapalan Negeri Surabaya</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>PPNS adalah Perguruan Tinggi penyelenggara pendidikan vokasi bidang perkapalan dan teknologi penunjangnya dan merupakan yang pertama dan satu satunya di Indonesia</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Jurusan yang terdapat di PPNS</ion-label>
+      </ion-list-header>
+      <ion-item [routerLink]="'/tabs/tab1/detail'">
+        <ion-icon slot="start" color="high" name="star"></ion-icon>
+        <ion-label>TEKNIK KELISTRIKAN KAPAL</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="'/tabs/tab1/detail2'">
+        <ion-icon slot="start" color="high" name="star"></ion-icon>
+        <ion-label>TEKNIK BANGUNAN KAPAL</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="'/tabs/tab1/detail3'">
+        <ion-icon slot="start" color="high" name="star"></ion-icon>
+        <ion-label>TEKNIK PERMESINAN KAPAL</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
